@@ -1,0 +1,13 @@
+**/bin/
+**/obj/
+**/.vs/
+**/.vscode/
+**/*.user
+**/node_modules/
+frontend/
+docs/
+tests/
+.git/
+.gitignore
+README.md
+**/appsettings.Development.json

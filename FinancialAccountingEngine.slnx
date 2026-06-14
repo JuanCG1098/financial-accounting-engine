@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FinancialAccountingEngine.Api/FinancialAccountingEngine.Api.csproj" />
+    <Project Path="src/FinancialAccountingEngine.Application/FinancialAccountingEngine.Application.csproj" />
+    <Project Path="src/FinancialAccountingEngine.Domain/FinancialAccountingEngine.Domain.csproj" />
+    <Project Path="src/FinancialAccountingEngine.Infrastructure/FinancialAccountingEngine.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FinancialAccountingEngine.IntegrationTests/FinancialAccountingEngine.IntegrationTests.csproj" />
+    <Project Path="tests/FinancialAccountingEngine.UnitTests/FinancialAccountingEngine.UnitTests.csproj" />
+  </Folder>
+</Solution>

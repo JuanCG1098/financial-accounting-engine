@@ -1,0 +1,20 @@
+<Project>
+
+  <!--
+    Common build settings shared by every project in the solution.
+  -->
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+
+    <!--
+      Audit only direct package references. The EF Core design-time tooling pulls in a
+      transitive dependency (System.Security.Cryptography.Xml) that is flagged by the NuGet
+      audit but is never shipped at runtime (it is a build-time-only tool dependency). Auditing
+      direct dependencies keeps the build clean while still surfacing vulnerabilities in packages
+      this solution actually references and deploys.
+    -->
+    <NuGetAudit>true</NuGetAudit>
+    <NuGetAuditMode>direct</NuGetAuditMode>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,48 @@
+@host = http://localhost:8080
+
+### Dashboard summary
+GET {{host}}/api/dashboard/summary
+
+### List transactions (optionally filtered)
+GET {{host}}/api/transactions?status=PROCESSED&currency=USD
+
+### Create a transaction
+POST {{host}}/api/transactions
+Content-Type: application/json
+
+{
+  "type": "CASH_DEPOSIT",
+  "currency": "USD",
+  "amount": 1500.00,
+  "branchCode": "BR-001",
+  "costCenter": "CC-001",
+  "description": "Branch cash deposit"
+}
+
+### Process a transaction (replace the id)
+POST {{host}}/api/transactions/00000000-0000-0000-0000-000000000000/process
+
+### List accounting entries
+GET {{host}}/api/accounting-entries
+
+### List accounting rules
+GET {{host}}/api/accounting-rules
+
+### Create an accounting rule
+POST {{host}}/api/accounting-rules
+Content-Type: application/json
+
+{
+  "transactionType": "ACCOUNTING_ONLY_OPERATION",
+  "currency": null,
+  "debitAccountCode": "500001",
+  "debitAccountName": "Operational Expense Account",
+  "creditAccountCode": "400001",
+  "creditAccountName": "Accounting Adjustment Account",
+  "requiresCashFlow": false,
+  "isAccountingOnly": true,
+  "costCenterBehavior": "NONE"
+}
+
+### Audit trail
+GET {{host}}/api/audit
