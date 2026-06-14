@@ -73,6 +73,17 @@ financial-accounting-engine/
 └── docker-compose.yml
 ```
 
+## Documentation
+
+| Doc | Contents |
+| --- | --- |
+| [docs/architecture.md](docs/architecture.md) | Layers, dependencies and key design decisions |
+| [docs/business-rules.md](docs/business-rules.md) | Transaction types, rules, balance validation, audit |
+| [docs/api-examples.md](docs/api-examples.md) | Request/response examples for every endpoint |
+| [docs/development.md](docs/development.md) | Setup, running, tests and troubleshooting |
+| [docs/decisions.md](docs/decisions.md) | Technical decisions and the reasoning behind them |
+| [CLAUDE.md](CLAUDE.md) | Project context and conventions for AI assistants |
+
 ## Business flow
 
 1. A financial transaction is created and stays in `PENDING`.
