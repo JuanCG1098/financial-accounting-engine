@@ -82,6 +82,7 @@ financial-accounting-engine/
 | [docs/api-examples.md](docs/api-examples.md) | Request/response examples for every endpoint |
 | [docs/development.md](docs/development.md) | Setup, running, tests and troubleshooting |
 | [docs/decisions.md](docs/decisions.md) | Technical decisions and the reasoning behind them |
+| [docs/PROJECT_LOG.md](docs/PROJECT_LOG.md) | Build & verification log (what was done and proven) |
 | [CLAUDE.md](CLAUDE.md) | Project context and conventions for AI assistants |
 
 ## Business flow
