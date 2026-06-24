@@ -111,11 +111,11 @@ Endpoints (see **[docs/api-examples.md](docs/api-examples.md)** for payloads):
 
 ## Screenshots
 
-> _Placeholder — add dashboard / transactions / entry-detail screenshots here._
+Flutter web client, running against the Dockerized API + PostgreSQL with the seeded data.
 
-| Dashboard | Transactions | Entry detail |
+| Dashboard | Transactions | Accounting entries |
 | --- | --- | --- |
-| _(screenshot)_ | _(screenshot)_ | _(screenshot)_ |
+| ![Dashboard](docs/img/01-dashboard.png) | ![Transactions](docs/img/02-transactions.png) | ![Accounting entries](docs/img/03-entries.png) |
 
 ## Running the project
 
